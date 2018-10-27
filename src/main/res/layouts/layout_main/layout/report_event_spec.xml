@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/event_spec_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/event_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="test"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/event_type_img"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/policeman" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/event_send"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/event_camera_img"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:src="@drawable/camera" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/event_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/textinputborder"
+            android:hint="Enter your comment here!"
+            android:paddingLeft="10dp"
+            android:textColor="#FFFFFF">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/event_send"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/event_back_button"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/login_buttons"
+            android:paddingLeft="10dp"
+            android:text="Back"
+            android:textColor="#FFFFFF"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/event_send_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/login_buttons"
+            android:paddingLeft="10dp"
+            android:text="Send"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</RelativeLayout>
